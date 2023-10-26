@@ -10,9 +10,11 @@
     <hr>
 
     <!--delimitadores-->
+    <!-- Saídas usando tags via PHP
     <?php 
     echo "<i>Olá PHP!</i>";
-    echo 2023;
+    
+    echo "<p>2023 </p>";
     
     ?>
 </body>
