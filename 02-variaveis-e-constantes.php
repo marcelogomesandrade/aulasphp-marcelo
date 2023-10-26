@@ -39,5 +39,21 @@
 
 <p> Estamos no <?=$curso?> em <?=$ano?></p>
 
+<hr>
+
+<?php
+ // Constantes 
+
+ define("AUTOR","Marcelo Gomes de Andrade");
+ const EMPRESA = "ABC Tecnologia";
+ const ANO_FUNDACAO = 2000;
+
+
+?>
+<!--Saídas-->
+<P>Autor do site:<?=AUTOR?></p>
+<p>Nome da empresa:<?=EMPRESA?></p>
+<p>Fundada em :<?=ANO_FUNDACAO?></p>
+
 </body>
 </html>
