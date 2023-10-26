@@ -47,7 +47,7 @@
 <hr>
     <!-- Forma de saída ABREVIADA/SIMPLIFICADA -->
 
-<p> Estamos no <?=$curso?> em <?=$ano?></p>
+<p> Estamos no <span class="destaque"><?=$curso?></span> em <?=$ano?></p>
 
 <hr>
 
