@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variáveis e Constantes</title>
+
+    <style>
+  p {font-family : Verdana;}
+  .destaque {
+    background-color:Yellow;
+    color: red;
+  }
+
+    </style>
 </head>
 <body>
     <h1>Variáveis e Constantes</h1>
@@ -23,7 +32,8 @@
 
     // saída Interpolada 
 
-    echo "<p>Estamos no $curso em $ano </p>";
+    echo "<p>Estamos no <span class='destaque'>$curso</span> em $ano </p>";
+    echo "<p>Estamos no <span class=\"destaque\">$curso</span> em $ano </p>";
 
     // Não dar certo, as variáveis são tratadas como texto
     echo '<p>Estamos no $curso em $ano </p>';
@@ -42,7 +52,9 @@
 <hr>
 
 <?php
- // Constantes 
+ // Constantes (recomenda-se dar nome em MAIÚSCULAS)
+
+ // Define é forma antiga, const é a forma mais atual, mas podendo optar em quaisquer uma 
 
  define("AUTOR","Marcelo Gomes de Andrade");
  const EMPRESA = "ABC Tecnologia";
@@ -54,6 +66,8 @@
 <P>Autor do site:<?=AUTOR?></p>
 <p>Nome da empresa:<?=EMPRESA?></p>
 <p>Fundada em :<?=ANO_FUNDACAO?></p>
+
+
 
 </body>
 </html>
