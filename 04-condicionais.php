@@ -60,7 +60,7 @@ if ($qtdEmEstoque < $qtdCritica){
 }
 
 $a = 5;
-$b = 5;
+$b = "5";
 
 
 
