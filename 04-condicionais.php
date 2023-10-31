@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<script>
+
+    .normal {color:red;}
+    .repor {color:blue;}
+    .urgente {color:yellow;}
+
+</script>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,18 +54,18 @@
 <?php
 
 if ($qtdEmEstoque < $qtdCritica){
-    echo "<p>É necessário comprar / repor !</p>";
+    echo "<p class='repor'>É necessário comprar / repor !</p>";
 
     //Condicional SIMPLES/ANINHADA 
     if ($qtdEmEstoque===0){
 
-        echo "<p> URGENTE!!! </P>";}
+        echo "<p class='urgente'> URGENTE!!! </P>";}
 
 
     }
 
  else {
-     echo "<p>Estoque normal</p>";
+     echo "<p classe='normal'>Estoque normal</p>";
 }
 
 $a = 5;
