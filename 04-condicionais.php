@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<script>
+<style>
 
-    .normal {color:red;}
-    .repor {color:blue;}
-    .urgente {color:yellow;}
+    .normal {background-color:red;
+        color: white;
+    }
+    .repor {background-color:blue;
+    color:white;}
+    .urgente {background-color:yellow;}
 
-</script>
+</style>
 
 
 <head>
@@ -41,7 +44,7 @@
     // Controle de Estoque 
 
     $produto = "Ultrabook Dell";
-    $qtdEmEstoque = 10; // o que temos no momento 
+    $qtdEmEstoque = 0; // o que temos no momento 
     $qtdCritica = 2; // minimo necessário. 
     
     ?>
