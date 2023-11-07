@@ -34,61 +34,70 @@
 
     $numero = 100;
     if ($numero > 20) {
-
-        echo "<p>$numero é maior que 20.</p>";
-    }
-
-
     ?>
-    <!-- if (se), else (senão) -->
+
+        <p><?= $numero ?> é maior que 20.</p>
+
+    <?php
+    }
+    ?>
+
+
+
 
     <h2>Composta (if/else)</h2>
 
     <?php
 
-    // Controle de Estoque 
+
 
     $produto = "Geladeira";
-    $qtdEmEstoque = 0; // o que temos no momento 
-    $qtdCritica = 2; // minimo necessário. 
+    $qtdEmEstoque = 0;
+    $qtdCritica = 2;
 
     ?>
 
     <h3>Produto: <?= $produto ?></h3>
     <h4>Estoque: <?= $qtdEmEstoque ?></h4>
 
-    <!-- Se a quantidade em estoque for abaixo da quantidade critica , então o sistema deve avisar e pedir para repor.-->
+
 
     <?php
 
     if ($qtdEmEstoque < $qtdCritica) {
-        echo "<p class='repor'>É necessário comprar / repor !</p>";
+    ?>
+        <p class="repor">É necessário comprar / repor !</p>
 
-        //Condicional SIMPLES/ANINHADA 
+
+        <?php
         if ($qtdEmEstoque === 0) {
+        ?>
 
-            echo "<p class='urgente'> URGENTE!!! </P>";
+            <p class="urgente"> URGENTE!!! </p>
+        <?php
         }
     } else {
-        echo "<p classe='normal'>Estoque normal</p>";
+        ?>
+        <p classe="normal">Estoque normal</p>
+    <?php
     }
+
 
     $a = 5;
     $b = "5";
 
 
 
-    //== IGUALDADE DE VALORES 
 
-    var_dump($a == $b); //true
-    //=== IGUALDADE DE VALORES E TIPO DE DADOS 
 
-    var_dump($a === $b); //false
+    var_dump($a == $b);
+
+    var_dump($a === $b);
 
     ?>
 
 
-    <!-- Caso contrário, simplesmente mostrar o que o estoque está normal -->
+
 
 
 
@@ -97,7 +106,7 @@
 
     <?php
 
-    //verificando o produtor para dar uma garantia 
+
 
     if ($produto == "Ultrabook") {
         $garantia = 5;
@@ -113,30 +122,38 @@
 
     ?>
 
-    <p>O produto <?= $produto ?> possui garantia de <?= $garantia ?> ano <?php if($garantia>1)echo "s"?>.</p>
+    <p>O produto <?= $produto ?> possui garantia de <?= $garantia ?> ano <?php if ($garantia > 1) echo "s" ?>.</p>
 
 
-<h3>Encadeada usando switch/case </h3>
-<hr>
- 
+    <h3>Encadeada usando switch/case </h3>
+    <hr>
 
-  <?php
 
-  // switc (analise/escolha/avalie)
-
-  switch ($produto){
-    case "Ultrabook": $garantia = 5; break;
-    case "Geladeira" : $garantia = 3; break;
-    case "TV": $garantia = 2; break;
-    default: $garantia= 1;break;
-  }
-
-  ?>
+    <?php
 
 
 
-<p>Produto: <?=$produto?></p>
-<p>Garantia: <?=$garantia?></p>
+    switch ($produto) {
+        case "Ultrabook":
+            $garantia = 5;
+            break;
+        case "Geladeira":
+            $garantia = 3;
+            break;
+        case "TV":
+            $garantia = 2;
+            break;
+        default:
+            $garantia = 1;
+            break;
+    }
+
+    ?>
+
+
+
+    <p>Produto: <?= $produto ?></p>
+    <p>Garantia: <?= $garantia ?></p>
 
 </body>
 
