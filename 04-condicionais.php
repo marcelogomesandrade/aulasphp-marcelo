@@ -4,7 +4,7 @@
 <style>
 
     .normal {background-color:red;
-        color: white;
+        color: yellowgreen;
     }
     .repor {background-color:blue;
     color:white;}
