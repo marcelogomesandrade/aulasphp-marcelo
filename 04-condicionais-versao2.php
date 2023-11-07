@@ -1,3 +1,6 @@
+
+<?php include "recursos.php";?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -26,6 +29,7 @@
 
 <body>
     <h1>Condicionais (if, else, elseif)</h1>
+    <p><?=ESCOLA? - <?=></p>
     <hr>
 
     <h2>Simples</h2>
