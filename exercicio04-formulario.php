@@ -13,14 +13,25 @@
             <label for="produto">Produto:</label>
             <input required type="text" name="produto" id="produto">
         </p>
+
+        <?php
+        
+        $fabricantes = array ("Motorola","Samsung","LG","Apple");?>
      
 		<p>
 			<label for="fabricante">Fabricante:</label>
 			<select name="fabricante" id="fabricante">
+
+
 				<!-- não apague este <option> vazio -->
-				<option value=""></option>
-				
-				<!-- Faça aqui a programação
+                    <option value=""></option>
+
+				<?php foreach ($fabricantes as $fabricante) {?>
+                    <option><?=$fabricante?></option>
+
+                <?php } ?>
+                
+                <!-- Faça aqui a programação
 				necessária para obter os dados de um array (criado por você)
 				e colocá-los (cada um) dentro de uma tag <option>. -->	
 				
