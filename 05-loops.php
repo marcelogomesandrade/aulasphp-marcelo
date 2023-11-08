@@ -23,6 +23,15 @@
 </head>
 
 <body>
+
+
+<!-- Usando o foreach para acessar os dados do array criando em outro arquivo (acessível devido ao include)-->
+    
+    <?php foreach($linguagens as $linguagens){ ?>
+    <p><i><?=$linguagens?></i></p>
+
+<?php
+}?>
     <h1>Loops em PHP</h1>
     <hr>
     <h2>Tradicionais: for, while, do/while</h2>
